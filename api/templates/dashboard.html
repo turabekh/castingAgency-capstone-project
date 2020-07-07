@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="section">
+    <div class="container">
+        <div id="header">
+            <div class="level">
+                <p class="level-item has-text-centered">
+                    <a class="button is-info is-large" @click="seen = !seen">Show JWT Token</a>
+                </p>
+            </div>
+            <div class="columns" v-if="seen">
+                <div class="column"></div>
+                <div class="column is-four-fifths">
+                    <div class="notification" id="active-token" style="word-wrap: break-word;">
+                
+                    </div>
+                </div>
+                <div class="column"></div>
+            </div>
+        </div>
+
+    </div>
+  </section>
+  <script src="{{url_for('static', filename='main.js') }}"></script>
+  <script src="{{url_for('static', filename='toggle.js') }}"></script>
+{% endblock %}
+
+
+
+
+

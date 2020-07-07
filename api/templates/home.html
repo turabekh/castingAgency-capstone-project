@@ -1,0 +1,41 @@
+{% extends "base.html" %} 
+
+{% block content %} 
+<section class="hero is-black is-fullheight">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <p class="title">Capstone</p>
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active" href="https://dev-qor82uv0.us.auth0.com/authorize?audience=movies&response_type=token&client_id=Ka3Hr9fkZ4Z0O2iJpk355DA66RpJJ2vv&redirect_uri=http://localhost:5000/callback">
+                Login
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    <div class="hero-body">
+      <div class="container has-text-centered"> 
+        <h1>
+            <a href="https://dev-qor82uv0.us.auth0.com/authorize?audience=movies&response_type=token&client_id=Ka3Hr9fkZ4Z0O2iJpk355DA66RpJJ2vv&redirect_uri=http://localhost:5000/callback">
+                <button class="button is-info is-large">Login</button>
+             </a>
+        </h1>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+
+
